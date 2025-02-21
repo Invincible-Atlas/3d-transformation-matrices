@@ -16,7 +16,7 @@ const transMatrix = (function () {
     pub.rotateZ = function (theta) {
         let c = Math.cos(theta);
         let s = Math.sin(theta);
-        return ([[c, s, 0, 0], [-c, s, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]);
+        return ([[c, s, 0, 0], [-s, c, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]);
     }
     pub.scale = function (x, y, z) {
         return ([[x, 0, 0, 0], [0, y, 0, 0], [0, 0, z, 0], [0, 0, 0, 1]]);
